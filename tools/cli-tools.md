@@ -12,3 +12,7 @@ AIを利用・開発するためのCLIツール、ローカル環境構築ツー
 ## Context / Token Optimization
 
 * [Headroom](https://github.com/headroomlabs-ai/headroom) - AIエージェントが読むトークン（ツール出力・ログ・RAGチャンク・ファイル・会話履歴）をLLMに渡す前に圧縮し、トークンを60〜95%削減するコンテキスト圧縮レイヤー。ライブラリ・プロキシ・MCPサーバー・`headroom wrap claude/codex/cursor/aider` のCLIラップとして使え、ローカル動作で圧縮は可逆（原文をオンデマンドで復元）。Claude/Codex間のクロスエージェントメモリも備える。エージェント運用のコスト削減・コンテキスト圧迫対策の検証に。 #cli #llm #token-optimization #mcp
+
+## Dev / Workflow
+
+* [husky](https://typicode.github.io/husky/) - Gitフック（pre-commit、commit-msg等）を簡単に管理・共有できるツール（Node製）。コミット前にlintやテスト、シークレットスキャン（gitleaks等）を自動実行させるのに使える。チーム全体で同じフックを強制でき、品質・セキュリティのガードレールに有効。 #git #cli #workflow
